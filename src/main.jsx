@@ -18,7 +18,7 @@ i18next.use(initReactI18next).init({
   },
 });
 
-// Importe createRoot de "react-dom/client" e use-o para renderizar o aplicativo
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>

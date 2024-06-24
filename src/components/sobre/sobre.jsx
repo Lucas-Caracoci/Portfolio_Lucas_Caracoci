@@ -20,7 +20,7 @@ function Sobre() {
 
         <div className="card">
           <div className='info-sobre'>
-            <img src='\src\assets\imgs\Eu.png' alt='' className='eu' />
+            <img src='\imgs\Eu.png' alt='' className='eu' />
 
             <div className='botoes'>
               <a href='mailto:lucascaracoci2@gmail.com' target='_blank'>

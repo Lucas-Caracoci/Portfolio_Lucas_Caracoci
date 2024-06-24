@@ -25,6 +25,7 @@
         "description-movie":"A movie website developed with React, where users can explore a vast collection of movies in an interactive way. This project represents my journey of learning and mastering advanced web development technologies. Using skills in ",
         "description-slider":"This project consists of an interactive image slider. The slider allows for the dynamic display of multiple images with smooth transitions between them. The images are provided by a data file, which includes the URL, alt text, and links for each image. Developed using: ",
         "description-vitrine":"This project is a dynamic product showcase displaying detailed product information from an API. The interface allows switching between different layouts for mobile and desktop devices. It features product displays with prices, images, discounts, and purchase buttons. Asynchronous data fetching from a REST API is handled using the Fetch API. The project demonstrates front-end development skills, including creating dynamic and responsive interfaces, API consumption, and DOM manipulation with JavaScript. Developed with: ",
-        "project-button-visit":""
+        "project-button-visit":"Visit →",
+        "project-button-code":"Code →"
     }
 }

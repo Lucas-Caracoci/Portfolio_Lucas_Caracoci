@@ -3,14 +3,7 @@ import ScrollReveal from 'scrollreveal';
 const scrollRevealConfig = () => {
     const reveal = ScrollReveal({reset:false});
   
-    const slideUp = {
-      distance: '200px',
-      origin: 'bottom',
-      opacity: 0,
-      duration: 1500,
-      interval: 0
-      
-    };
+
     const slideLeft = {
         distance: '200px',
         origin: 'right',

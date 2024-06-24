@@ -92,23 +92,23 @@ const Skills = () => {
                 <div className='learning-skill' id='learning-skills'>
                     <div className='learning-item' tabIndex="0">
                         <span className="tooltiptext">SASS</span>
-                        <img src='\src\assets\imgs\sass.png' alt='' className='icon-skill'  />
+                        <img src='\imgs\sass.png' alt='' className='icon-skill'  />
                     </div>
                         <div className='learning-item'  tabIndex="0">
                     <span className="tooltiptext">Git</span>
-                        <img src='\src\assets\imgs\git.png' alt='' className='icon-skill' />
+                        <img src='\imgs\Git.png' alt='' className='icon-skill' />
                     </div>
                         <div className='learning-item'  tabIndex="0">
                     <span className="tooltiptext">Next.JS</span>
-                        <img src='\src\assets\imgs\next.png' alt='' className='icon-skill' />
+                        <img src='\imgs\next.png' alt='' className='icon-skill' />
                     </div>
                     <div className='learning-item'  tabIndex="0">
                         <span className="tooltiptext">TypeScript</span>
-                        <img src='\src\assets\imgs\ts.png' alt='' className='icon-skill' />
+                        <img src='\imgs\ts.png' alt='' className='icon-skill' />
                     </div>
                     <div className='learning-item'  tabIndex="0">
                         <span className="tooltiptext">Jquery</span>
-                        <img src='\src\assets\imgs\jquery.png' alt='' className='icon-skill' />
+                        <img src='\imgs\jquery.png' alt='' className='icon-skill' />
                     </div>
 
                 </div>

@@ -42,7 +42,7 @@ function Topo() {
   }, []);
 
   useEffect(() => {
-    // Adiciona um novo useEffect para observar a posição do scroll e chamar scrollRevealConfig() com a posição atual
+
     const handleScrollAnimation = () => {
       const scrollPosition = window.scrollY;
       scrollRevealConfig(scrollPosition);
@@ -52,7 +52,7 @@ function Topo() {
     return () => {
       window.removeEventListener('scroll', handleScrollAnimation);
     };
-  }, []); // Certifique-se de que este useEffect seja executado apenas uma vez
+  }, []); 
 
   const [t, i18n] = useTranslation('global');
   const handleChangeLanguage = (lang) => {
@@ -98,10 +98,10 @@ function Topo() {
         </a>
       </nav>
       <div className={`teste ${isOpen ? 'open' : ''}`} onClick={toggleOpen}>
-        <img src="/src/assets/imgs/translation.png" alt="" className="translate" />
+        <img src="/imgs/translation.png" alt="" className="translate" />
         <div className="idioma">
           <img
-            src="/src/assets/imgs/brasil.png"
+            src="/imgs/brasil.png"
             alt="icone-bandeira-brasil"
             id="bra"
             className='bra'
@@ -111,7 +111,7 @@ function Topo() {
             }}
           />
           <img
-            src="/src/assets/imgs/estados-unidos.png"
+            src="/imgs/estados-unidos.png"
             alt="icone-bandeira-eua"
             id="eua"
             className='eua'

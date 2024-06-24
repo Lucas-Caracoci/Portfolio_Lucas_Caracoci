@@ -42,7 +42,7 @@ function Banner() {
         </div>
        
       </div>
-      <img src="\src\assets\imgs\bg.png" alt="" className='montanha' />
+      <img src="\imgs\bg.png" alt="" className='montanha' />
     </section>
   );
 }
