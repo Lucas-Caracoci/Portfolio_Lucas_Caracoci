@@ -1,0 +1,29 @@
+{
+    "header":{
+        "link-home":"INÍCIO",
+        "link-about":"SOBRE",
+        "link-skills":"HABILIDADES",
+        "link-projects":"PROJETOS"
+    },
+    "banner":{
+        "sub1":"Desenvolvedor Front End",
+        "sub2":"Desenvolvedor React"
+    },
+    "about":{
+        "title": "SOBRE MIM",
+        "about-me": "Olá! Meu nome é Lucas, sou um desenvolvedor front-end apaixonado por HTML, CSS, JavaScript e React. Além de programar, gosto de andar de skate e jogar videogame e estou sempre em busca de novos desafios no mundo do desenvolvimento web. Estou pronto para contribuir com minha paixão e habilidades para projetos empolgantes e inovadores. Vamos construir algo incrível juntos!"
+        
+    },
+    "skills":{
+        "title": "HABILIDADES",
+        "btn-1":"Habilidades",
+        "btn-2":"Interesses"
+    },
+    "projects":{
+        "title": "PROJETOS",
+        "description-restaurant":"Site que desenvolvi com foco principal em React. Este projeto foi uma oportunidade para mim aprimorar minhas habilidades em React, utilizando conceitos avançados como ",
+        "description-movie":"Site de filmes desenvolvido com React, onde os usuários podem explorar uma vasta coleção de filmes de forma interativa. Este projeto representa minha jornada de aprendizado e domínio das tecnologias avançadas de desenvolvimento web. Utilizando habilidades em consumo de ",
+        "description-slider":"Este projeto consiste em um slider de imagens interativo. O slider permite a visualização de várias imagens de forma dinâmica, com transições suaves entre elas. As imagens são fornecidas por um arquivo de dados , que inclui a URL, texto alternativo e links para cada imagem. Feito utilizando: ",
+        "description-vitrine":"Este projeto é uma vitrine de produtos dinâmica que exibe informações detalhadas de produtos de uma API. A interface permite alternar entre diferentes layouts para dispositivos móveis e desktops. Apresenta produtos com preços, imagens, descontos e botões de compra. A obtenção de dados é feita de forma assíncrona usando a Fetch API para consumir uma API REST. O projeto demonstra habilidades em desenvolvimento front-end, incluindo a criação de interfaces dinâmicas e responsivas, consumo de APIs e manipulação do DOM com JavaScript. Desenvolvido utilizando: "
+    }
+}
