@@ -1,4 +1,4 @@
-window.revelar = ScrollReveal({ reset: false });
+window.revelar = ScrollReveal({ reset: true });
   
   var slideUp = {
     distance: '200px',
