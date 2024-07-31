@@ -1,10 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './banner.css';
 import Typed from 'typed.js';
 import { useTranslation } from 'react-i18next';
 import scrollRevealConfig from './banner-reveal.js';
 
 function Banner() {
+  const [isLoaded, setIsLoaded] = useState(false);
   const el = useRef(null);
   const [t, i18n] = useTranslation('global');
   const sub1 = t('banner.sub1');
@@ -25,24 +26,36 @@ function Banner() {
     };
   }, [i18n.language]);
 
-
   useEffect(() => {
     scrollRevealConfig();
   }, []);
+
+  useEffect(() => {
+   
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 1000); // Ajuste o tempo conforme necessário
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isLoaded) {
+    return <div className="loading">Loading...</div>; 
+  }
+
   return (
     <section className="banner" id="banner">
       <div className="banner-conteudo">
         <div>
-          <h1 className="titulo name-reveal"  id="banner-h1">
+          <h1 className="titulo name-reveal" id="banner-h1">
             Lucas Caracoci
           </h1>
-          <div className='sub-reveal'>
-            <span className="subtitulo " ref={el}></span>
+          <div className="sub-reveal">
+            <span className="subtitulo" ref={el}></span>
           </div>
         </div>
-       
       </div>
-      <img src="\imgs\bg.png" alt="" className='montanha' />
+      <img src="/imgs/bg.png" alt="" className="montanha" />
     </section>
   );
 }
