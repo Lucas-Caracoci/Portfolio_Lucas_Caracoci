@@ -27,14 +27,10 @@ function Banner() {
   }, [i18n.language]);
 
   useEffect(() => {
-    scrollRevealConfig();
-  }, []);
-
-  useEffect(() => {
-   
     const timer = setTimeout(() => {
       setIsLoaded(true);
-    }, 1000); // Ajuste o tempo conforme necessário
+      scrollRevealConfig();
+    }, 1000); 
 
     return () => clearTimeout(timer);
   }, []);
