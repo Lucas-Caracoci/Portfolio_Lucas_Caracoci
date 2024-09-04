@@ -2,10 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import './skills.css'
 import { useTranslation } from "react-i18next"
 import scrollRevealConfig from './skills-reveal.js';
+import Skillbar from './skill-bar';
 const Skills = () => {
     const [t, i18n] = useTranslation("global");
 
-    
+  
     function changeDiv() {
         const btnLearned = document.getElementById("btn-learned")
         const btnLearning = document.getElementById("btn-learning")
@@ -44,51 +45,8 @@ const Skills = () => {
             </div>
             <div className='skills-area'>
                 
-                <div className='skills-bars'id='skills-bars'>
-                    <div>
-                        <div className="skills">
-                            <div className="skill">
-                                <div className="skill-name html">HTML</div>
-                                <div className="skill-bar html-bar">
-                                    <div className="skill-per" per="90%" style={{ maxWidth: '90%' }}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <Skillbar></Skillbar>
 
-                    <div>
-                        <div className="skills">
-                            <div className="skill">
-                                <div className="skill-name css">CSS</div>
-                                <div className="skill-bar css-bar">
-                                    <div className="skill-per" per="70%" style={{ maxWidth: '70%' }}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div className="skills">
-                            <div className="skill">
-                                <div className="skill-name js">JS</div>
-                                <div className="skill-bar js-bar">
-                                    <div className="skill-per" per="60%" style={{ maxWidth: '60%' }}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div className="skills">
-                            <div className="skill">
-                                <div className="skill-name react">REACT.JS</div>
-                                <div className="skill-bar react-bar">
-                                    <div className="skill-per" per="50%" style={{ maxWidth: '50%' }}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className='learning-skill' id='learning-skills'>
                     <div className='learning-item' tabIndex="0">
                         <span className="tooltiptext">SASS</span>
