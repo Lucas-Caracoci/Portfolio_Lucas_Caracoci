@@ -4,7 +4,7 @@ const scrollRevealConfig = () => {
   const reveal = ScrollReveal({ reset: false });
 
   const slideUp = {
-    distance: '200px',
+    distance: '150px',
     origin: 'bottom',
     opacity: 0,
     interval: 2,
