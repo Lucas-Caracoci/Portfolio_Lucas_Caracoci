@@ -63,7 +63,7 @@ function Projetoinfo() {
     <div>
          {project.map((item, index)=> {
                     return (
-                        <ProjectInfo key={item.id} img={item.img} t={t} description={item.description} title={item.title} index={index} />
+                        <ProjectInfo key={item.id} img={item.img} t={t} description={item.description} title={item.title} index={index} projectLink={item.projectLink} gitLink={item.gitLink}/>
                     )
                 })}
     </div>

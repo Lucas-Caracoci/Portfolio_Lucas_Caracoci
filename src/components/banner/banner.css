@@ -1,9 +1,12 @@
 
 .banner img{
     width: 100%;
+    
     z-index: 1;
     bottom: 0;
     position: relative;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 .banner {
     flex-direction: column;

@@ -44,8 +44,8 @@ const Skills = () => {
                 </button>
             </div>
             <div className='skills-area'>
-                
-                <Skillbar></Skillbar>
+
+                <div id='skills-bars' className='skills-bars'><Skillbar></Skillbar></div>
 
                 <div className='learning-skill' id='learning-skills'>
                     <div className='learning-item' tabIndex="0">
