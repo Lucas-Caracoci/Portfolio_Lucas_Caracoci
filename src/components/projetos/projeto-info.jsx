@@ -27,12 +27,14 @@ function Projetoinfo() {
     const project = [
         {
             id: 1,
-            title: 'restaurant',
-            description: 'props, hooks e array filters.',
-            img: "/imgs/restaurant.png",
-            projectLink: 'https://restaurante-alpha-silk.vercel.app',
-            gitLink: 'https://github.com/Lucas-Caracoci/Restaurante',
+            title: 'weather',
+            description: 'React, CSS3, JavaScript ,Fetch API, API ,AXIOS.',
+            img: "/imgs/weather.png",
+            projectLink: 'https://weather-api-dusky-five.vercel.app',
+            gitLink: 'https://github.com/Lucas-Caracoci/Weather-api'
+            
         },
+        
         {
             id: 2,
             title: 'movie',
@@ -56,6 +58,15 @@ function Projetoinfo() {
             img: "/imgs/vitrine.png",
             projectLink: 'https://vitrine-xlow.vercel.app',
             gitLink: 'https://github.com/Lucas-Caracoci/vitrine_xlow'
+            
+        },
+        {
+            id: 5,
+            title: 'restaurant',
+            description: 'props, hooks e array filters.',
+            img: "/imgs/restaurant.png",
+            projectLink: 'https://restaurante-alpha-silk.vercel.app',
+            gitLink: 'https://github.com/Lucas-Caracoci/Restaurante',
         },
     ]
     
