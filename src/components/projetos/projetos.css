@@ -22,6 +22,9 @@
     
  
 }
+.single-img{
+    width: 650px;
+}
 .single-first{
     margin-top: 50px;
 }
@@ -31,10 +34,11 @@
     box-shadow: -60px 30px 80px 20px #0000006c;
     -webkit-filter: blur(0);
     filter: blur(0);
-    
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
     opacity: 1;
     -webkit-transform: perspective(800px) rotateY(25deg)  rotateX(10deg);
-    transform: perspective(800px) rotateY(25deg)  rotateX(10deg);
+    transform: perspective(800px) rotateY(20deg) rotateX(10deg);
     transition: all .6s ease;
     width: 560px;
 }

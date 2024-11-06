@@ -11,7 +11,7 @@
     },
     "about":{
         "title": "SOBRE MIM",
-        "about-me": "Olá! Meu nome é Lucas, sou um desenvolvedor front-end apaixonado por HTML, CSS, JavaScript e React. Além de programar, gosto de andar de skate e jogar videogame e estou sempre em busca de novos desafios no mundo do desenvolvimento web. Estou pronto para contribuir com minha paixão e habilidades para projetos empolgantes e inovadores. Vamos construir algo incrível juntos!"
+        "about-me": "Oi, sou Lucas, desenvolvedor front-end especializado em transformar ideias em interfaces envolventes e intuitivas, usando HTML, CSS, JavaScript e React. Tenho um olhar atento para detalhes e gosto de criar aplicações que sejam funcionais, rápidas e visualmente atraentes. Além de código bem estruturado, valorizo a experiência do usuário e busco soluções criativas para cada projeto. Fora do teclado, você pode me encontrar surfando ou mergulhado em um bom jogo, sempre buscando inspiração para o próximo desafio. Vamos criar algo que faça a diferença?"
         
     },
     "skills":{
@@ -25,7 +25,7 @@
         "description-movie":"Site de filmes desenvolvido com React, onde os usuários podem explorar uma vasta coleção de filmes de forma interativa. Este projeto representa minha jornada de aprendizado e domínio das tecnologias avançadas de desenvolvimento web. Utilizando habilidades em consumo de ",
         "description-slider":"Este projeto consiste em um slider de imagens interativo. O slider permite a visualização de várias imagens de forma dinâmica, com transições suaves entre elas. As imagens são fornecidas por um arquivo de dados , que inclui a URL, texto alternativo e links para cada imagem. Feito utilizando: ",
         "description-vitrine":"Este projeto é uma vitrine de produtos dinâmica que exibe informações detalhadas de produtos de uma API. A interface permite alternar entre diferentes layouts para dispositivos móveis e desktops. Apresenta produtos com preços, imagens, descontos e botões de compra. A obtenção de dados é feita de forma assíncrona usando a Fetch API para consumir uma API REST. O projeto demonstra habilidades em desenvolvimento front-end, incluindo a criação de interfaces dinâmicas e responsivas, consumo de APIs e manipulação do DOM com JavaScript. Desenvolvido utilizando: ",
-        "description-weather": "Site que fiz para consultar informações sobre o clima, baseado na api openweather",
+        "description-weather": "Desenvolvi um site em React que integra a API da OpenWeather para exibir condições climáticas em tempo real do local pesquisado pelo usuário. Utilizando Axios para consumir a API, o site apresenta informações detalhadas, como temperatura, umidade e previsão de clima, proporcionando uma experiência interativa e informativa para o usuário. Algumas tecnologias: ",
         "project-button-visit":"Visitar →",
         "project-button-code":"Código →"
     

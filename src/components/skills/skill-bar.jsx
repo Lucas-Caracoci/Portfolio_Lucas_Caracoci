@@ -7,8 +7,8 @@ function Skillbar() {
             <div>
                 <div className="skills">
                     <div className="skill">
-                        <div className="skill-name css">{name}</div>
-                        <div className="skill-bar css-bar">
+                        <div className={`skill-name ${name.toLowerCase()}`}>{name}</div>
+                        <div className={`skill-bar ${name.toLowerCase()}-bar`}>
                             <div className="skill-per" per={percent} style={{ maxWidth: percent }}></div>
                         </div>
                     </div>
@@ -17,29 +17,12 @@ function Skillbar() {
         )
     }
     
-    const info =
-        [
-            {   
-                id: 1,
-                name: 'HTML',   
-                per: 90
-            },
-            {   
-                id: 2,
-                name: 'CSS',
-                per: 70
-            },
-            {   
-                id: 3,
-                name: 'JS',
-                per: 60
-            },
-            {   
-                id: 4,
-                name: 'react',
-                per: 50
-            }
-        ]
+    const info = [
+        { id: 1, name: 'HTML', per: 90 },
+        { id: 2, name: 'CSS', per: 70 },
+        { id: 3, name: 'JS', per: 60 },
+        { id: 4, name: 'React', per: 50 }
+    ];
   return (
     <div>
       {info.map(item => {

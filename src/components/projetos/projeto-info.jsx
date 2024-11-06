@@ -28,7 +28,7 @@ function Projetoinfo() {
         {
             id: 1,
             title: 'weather',
-            description: 'React, CSS3, JavaScript ,Fetch API, API ,AXIOS.',
+            description: 'React, CSS3, JavaScript ,Props, API ,AXIOS.',
             img: "/imgs/weather.png",
             projectLink: 'https://weather-api-dusky-five.vercel.app',
             gitLink: 'https://github.com/Lucas-Caracoci/Weather-api'
@@ -82,3 +82,4 @@ function Projetoinfo() {
 }
 
 export default Projetoinfo
+    

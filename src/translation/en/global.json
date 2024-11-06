@@ -11,7 +11,7 @@
     },
     "about":{
         "title": "ABOUT ME",
-        "about-me": "Hello! My name is Lucas, and I am a passionate front-end developer specializing in HTML, CSS, JavaScript, and React. Besides programming, I enjoy skateboarding and playing video games, and I am always seeking new challenges in the world of web development. I am prepared to contribute my passion and skills to exciting and innovative projects. Let's build something amazing together!"
+        "about-me": "Hi, I’m Lucas, a front-end developer focused on transforming ideas into engaging and intuitive interfaces using HTML, CSS, JavaScript, and React. I have a keen eye for detail and enjoy creating applications that are functional, fast, and visually appealing. Beyond writing clean code, I value user experience and seek creative solutions for every project. When I'm not coding, you’ll likely find me surfing or immersed in a good game, always on the lookout for inspiration for the next challenge. Let’s create something impactful together!"
         
     },
     "skills":{
@@ -25,6 +25,7 @@
         "description-movie":"A movie website developed with React, where users can explore a vast collection of movies in an interactive way. This project represents my journey of learning and mastering advanced web development technologies. Using skills in ",
         "description-slider":"This project consists of an interactive image slider. The slider allows for the dynamic display of multiple images with smooth transitions between them. The images are provided by a data file, which includes the URL, alt text, and links for each image. Developed using: ",
         "description-vitrine":"This project is a dynamic product showcase displaying detailed product information from an API. The interface allows switching between different layouts for mobile and desktop devices. It features product displays with prices, images, discounts, and purchase buttons. Asynchronous data fetching from a REST API is handled using the Fetch API. The project demonstrates front-end development skills, including creating dynamic and responsive interfaces, API consumption, and DOM manipulation with JavaScript. Developed with: ",
+        "description-weather":"I developed a React-based website that integrates the OpenWeather API to display real-time weather information for user-searched locations. Using Axios to consume the API, the site presents detailed data, including temperature, humidity, and weather forecasts, offering an interactive and informative user experience. Technologies: ",
         "project-button-visit":"Visit →",
         "project-button-code":"Code →"
     }

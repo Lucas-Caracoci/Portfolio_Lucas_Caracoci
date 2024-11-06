@@ -181,16 +181,14 @@
 }
 
 .learned-trans {
-    transform: translateX(-1000px);
-    transition: .5s;
+    transform: translateX(-100%);
+    transition: 0.5s;
 }
 
 .learning-trans {
-    transform: translateX(0px) ;
-    
-    transition:  .5s;
-}
-
+    transform: translateX(0);
+    transition: 0.5s;
+}   
 
 .btn-learning,
 .btn-learned {

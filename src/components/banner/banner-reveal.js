@@ -12,9 +12,9 @@ const scrollRevealConfig = () => {
     duration: 1500,
   };
   const slideUp1 = {
-    distance: '200px',
+    distance: '100px',
     origin: 'bottom',
-    opacity: 1,
+    opacity: 0,
     duration: 1500,
     interval: 2
   };
