@@ -23,7 +23,7 @@
     position: relative;
     border-radius: 4px;
     overflow: hidden;
-    background-color: #fff;
+    
 
 
 }
@@ -109,7 +109,7 @@
     top: 0;
     left: 0;
     gap: 20px;
-    transform: translateX(1000px);
+    transform: translateX(100%);
 }
 
 .icon-skill {
@@ -181,7 +181,7 @@
 }
 
 .learned-trans {
-    transform: translateX(-100%);
+    transform: translateX(-130%);
     transition: 0.5s;
 }
 
@@ -335,7 +335,7 @@
         flex-wrap: wrap;
         padding: 70px 5px;
         gap: 10px;
-
+       
     }
     
     .skills-page {

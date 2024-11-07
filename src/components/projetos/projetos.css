@@ -22,9 +22,7 @@
     
  
 }
-.single-img{
-    width: 650px;
-}
+
 .single-first{
     margin-top: 50px;
 }
@@ -191,7 +189,6 @@ span{
 
 @media  (max-width:1024px){
     .single-img img {
-        
         width: 400px;
     }
     .single{
