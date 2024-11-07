@@ -6,7 +6,7 @@ function Projetoinfo() {
     function ProjectInfo({ title, description, t, img, projectLink, gitLink, index}) {
 
         return (
-            <div className={`single ${(index % 2) === 0  ? "single-first" : "reverse"} `}>
+            <div className={`single ${(index % 2) === 0  ? "" : "reverse"} ${(index) === 0 ? "single-first" : "" }`}>
                 <div className={`single-img ${(index % 2) === 0 ? 'img-reverse-reveal' : ''}`}>
                     <img src={img} alt="" />
                 </div>

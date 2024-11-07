@@ -3,7 +3,6 @@
     height: 100%;
     margin: 0;
     padding: 100px 0;
-    /* background-color: #ffffff; */
     position: relative;
     display: flex;
     width: 100%;
@@ -231,14 +230,15 @@ span{
 }
 @media  (max-width:450px){
     .single{
+        margin-top: 0px;
         flex-direction: column;
-        gap: 100px;
+        gap: 50px;
     }
     .single-first{
-        
+        margin-top: 40px;
         padding-bottom: 100px;
         gap: 30px;
-        border-bottom: 1px solid #b3b3b3;
+       
     }
     .single-detail {
         width: 100%;
