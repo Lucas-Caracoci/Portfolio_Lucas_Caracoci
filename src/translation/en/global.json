@@ -1,9 +1,9 @@
 {
     "header":{
-        "link-home":"HOME",
-        "link-about":"ABOUT",
+        "link-banner":"HOME",
+        "link-sobre":"ABOUT",
         "link-skills":"SKILLS",
-        "link-projects":"PROJECTS"
+        "link-projetos":"PROJECTS"
     },
     "banner":{
         "sub1":"Front End Developer",

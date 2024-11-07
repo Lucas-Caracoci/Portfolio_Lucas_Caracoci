@@ -18,9 +18,7 @@ const BgParticulas = (props) => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  
 
   const options = useMemo(
     () => ({
@@ -201,7 +199,7 @@ const BgParticulas = (props) => {
     return (
       <Particles
         id="tsparticles"
-        particlesLoaded={particlesLoaded}
+        
         options={options}
       />
     );

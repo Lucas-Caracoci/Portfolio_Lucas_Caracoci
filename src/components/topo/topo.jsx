@@ -6,120 +6,86 @@ import scrollRevealConfig from './topo-reveal.js';
 function Topo() {
   const [scrollClass, setScrollClass] = useState('');
   const [currentSection, setCurrentSection] = useState('');
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [t, i18n] = useTranslation('global');
 
   useEffect(() => {
-    scrollRevealConfig(0); 
     const handleScroll = () => {
+     
       const bannerH1 = document.getElementById('banner-h1');
-      if (bannerH1) {
-        const { top } = bannerH1.getBoundingClientRect();
-        if (top <= 100) {
-          setScrollClass('scroll-topo');
-        } else {
-          setScrollClass('');
-        }
-      }
+      setScrollClass(bannerH1?.getBoundingClientRect().top <= 100 ? 'scroll-topo' : '');
 
+      
       const sections = document.querySelectorAll('section');
       let current = '';
-      sections.forEach(sec => {
-        const top = window.scrollY;
-        const offset = sec.offsetTop - 150;
-        const height = sec.offsetHeight;
-        const id = sec.getAttribute('id');
-        if (top >= offset && top < offset + height) {
-          current = id;
+      sections.forEach((section) => {
+        const offset = section.offsetTop - 150;
+        const height = section.offsetHeight;
+        if (window.scrollY >= offset && window.scrollY < offset + height) {
+          current = section.getAttribute('id');
         }
       });
       setCurrentSection(current);
     };
 
+   
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
 
-    const handleScrollAnimation = () => {
-      const scrollPosition = window.scrollY;
-      scrollRevealConfig(scrollPosition);
-    };
+    scrollRevealConfig(window.scrollY);
+  }, [scrollClass]);
 
-    window.addEventListener('scroll', handleScrollAnimation);
-    return () => {
-      window.removeEventListener('scroll', handleScrollAnimation);
-    };
-  }, []); 
-
-  const [t, i18n] = useTranslation('global');
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
 
   const toggleOpen = () => {
-    setIsOpen(!isOpen); 
+    setIsOpen((prevState) => !prevState);
   };
 
-  function destacar(img) {
-    const brasilImg = document.getElementById('bra');
-    const euaImg = document.getElementById('eua');
-
-    switch (img.id) {
-      case 'eua':
-        euaImg.style.filter = 'saturate(100%)';
-        brasilImg.style.filter = 'saturate(0)';
-        break;
-      case 'bra':
-        brasilImg.style.filter = 'saturate(100%)';
-        euaImg.style.filter = 'saturate(0)';
-        break;
-      default:
-        break;
-    }
-  }
+  const destacar = (id) => {
+    document.getElementById('bra').style.filter = id === 'bra' ? 'saturate(100%)' : 'saturate(0)';
+    document.getElementById('eua').style.filter = id === 'eua' ? 'saturate(100%)' : 'saturate(0)';
+  };
 
   return (
     <header className={`topo ${scrollClass}`} id="topo">
       <nav>
-        <a className={`link link-reveal1 ${currentSection === 'banner' ? 'active' : ''}`} href="#banner">
-          {t('header.link-home')}
-        </a>
-        <a className={`link link-reveal2 ${currentSection === 'sobre' ? 'active' : ''}`} href="#sobre">
-          {t('header.link-about')}
-        </a>
-        <a className={`link link-reveal3 ${currentSection === 'skills' ? 'active' : ''}`} href="#skills">
-          {t('header.link-skills')}
-        </a>
-        <a className={`link last link-reveal4 ${currentSection === 'projetos' ? 'active' : ''}`} href="#projetos">
-          {t('header.link-projects')}
-        </a>
+        {['banner', 'sobre', 'skills', 'projetos'].map((section, index) => (
+          <a
+            key={section}
+            href={`#${section}`}
+            className={`link link-reveal${index + 1} ${currentSection === section ? 'active' : ''}`}
+          >
+            {t(`header.link-${section}`)}
+          </a>
+        ))}
       </nav>
-      <div className={`teste ${isOpen ? 'open' : ''}`} onClick={toggleOpen}>
-        <img src="/imgs/translation.png" alt="" className="translate" />
+      <div className={`idioma-mobile ${isOpen ? 'open' : ''}`} onClick={toggleOpen}>
+        <img src="/imgs/translation.png" alt="Ícone de tradução" className="translate" />
         <div className="idioma">
-          <img
-            src="/imgs/brasil.png"
-            alt="icone-bandeira-brasil"
-            id="bra"
-            className='bra'
-            onClick={() => {
-              handleChangeLanguage('pt');
-              destacar(document.getElementById('bra'));
-            }}
-          />
-          <img
-            src="/imgs/estados-unidos.png"
-            alt="icone-bandeira-eua"
-            id="eua"
-            className='eua'
-            onClick={() => {
-              handleChangeLanguage('en');
-              destacar(document.getElementById('eua'));
-            }}
-          />
+          {[
+            { id: 'bra', lang: 'pt', src: '/imgs/brasil.png', alt: 'Ícone do Brasil' },
+            { id: 'eua', lang: 'en', src: '/imgs/estados-unidos.png', alt: 'Ícone dos EUA' },
+          ].map(({ id, lang, src, alt }) => (
+            <img
+              key={id}
+              id={id}
+              src={src}
+              alt={alt}
+              className={id}
+              onClick={() => {
+                handleChangeLanguage(lang);
+                destacar(id);
+              }}
+            />
+          ))}
         </div>
       </div>
     </header>
