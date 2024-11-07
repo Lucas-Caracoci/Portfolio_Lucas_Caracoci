@@ -5,16 +5,13 @@ import { useTranslation } from "react-i18next"
 function Sobre() {
   const [t, i18n] = useTranslation("global");
   
-  ScrollReveal({ reset: true });
-  const tituloRef = useRef(null);
-
   useEffect(() => {
     scrollRevealConfig();
   }, []);
   return (
     
     <section className='sobre' id='sobre'>
-      <h2 className='titulo-reveal' ref={tituloRef}>{t("about.title")}</h2>
+      <h2 className='titulo-reveal' >{t("about.title")}</h2>
 
       <div className='info'>
 
