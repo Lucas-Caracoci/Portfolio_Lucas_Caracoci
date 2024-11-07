@@ -46,7 +46,7 @@ const Skills = () => {
                     id='learning-skills'
                     className={`learning-skill ${isLearning ? 'learning-trans' : ''}`}
                 >
-                    {["SASS", "Git", "Next.JS", "TypeScript", "Jquery"].map(skill => (
+                    {["SASS",  "Next.JS", "TypeScript", "Jquery"].map(skill => (
                         <div className='learning-item' key={skill} tabIndex="0">
                             <span className="tooltiptext">{skill}</span>
                             <img src={`\\imgs\\${skill.toLowerCase()}.png`} alt={skill} className='icon-skill' />

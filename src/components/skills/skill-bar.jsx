@@ -18,10 +18,11 @@ function Skillbar() {
     }
     
     const info = [
-        { id: 1, name: 'HTML', per: 90 },
-        { id: 2, name: 'CSS', per: 70 },
+        { id: 1, name: 'CSS', per: 80 },
+        { id: 2, name: 'Git', per: 70 },
         { id: 3, name: 'JS', per: 60 },
-        { id: 4, name: 'React', per: 50 }
+        { id: 4, name: 'React', per: 60 }
+        
     ];
   return (
     <div>

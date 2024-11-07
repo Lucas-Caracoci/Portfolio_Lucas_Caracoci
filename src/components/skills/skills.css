@@ -1,5 +1,5 @@
 .skills-page {
-    padding: 120px;
+    padding: 120px ;
     min-height: 100vh;
     height: 100%;
     background-color: #ffffff;
@@ -279,7 +279,7 @@
     }
 
     .skills-page {
-        padding-top: 10em;
+        padding-top: 60px ;
     }
 }
 
