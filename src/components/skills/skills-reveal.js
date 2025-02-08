@@ -33,10 +33,12 @@ const scrollRevealConfig = () => {
     reveal.reveal('.html-bar',{ ...slideRight, delay: 900 });
     reveal.reveal('.css',{ ...slideRight, delay: 1100 });
     reveal.reveal('.css-bar',{ ...slideRight, delay: 1300 });
-    reveal.reveal('.js',{ ...slideRight, delay: 1500 });
-    reveal.reveal('.js-bar',{ ...slideRight, delay:1700 });
-    reveal.reveal('.react',{ ...slideRight, delay: 1900 });
-    reveal.reveal('.react-bar',{ ...slideRight, delay: 2100 });
+    reveal.reveal('.git',{ ...slideRight, delay: 1500 });
+    reveal.reveal('.git-bar',{ ...slideRight, delay: 1700 });
+    reveal.reveal('.js',{ ...slideRight, delay: 1900 });
+    reveal.reveal('.js-bar',{ ...slideRight, delay:2100 });
+    reveal.reveal('.react',{ ...slideRight, delay: 2300 });
+    reveal.reveal('.react-bar',{ ...slideRight, delay: 2500 });
     
   
   
